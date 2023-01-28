@@ -135,7 +135,7 @@ export let serve = async (
       console.log({
         hmrUpdates,
       });
-      if (hmrUpdates && hmrUpdates.length > 0) {
+      if (hmrUpdates) {
         socket.hmr(assetsManifest, hmrUpdates);
         return;
       }
